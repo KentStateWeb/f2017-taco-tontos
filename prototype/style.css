@@ -9,3 +9,7 @@ div, section, main, aside, header, footer {
   padding: .5em;
   margin-bottom: 1em;
 }
+
+p{
+  font-family: Arial, sans-serif;
+}
