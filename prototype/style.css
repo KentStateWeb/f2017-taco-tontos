@@ -9,6 +9,9 @@ div, section, main, aside, header, footer {
   padding: .5em;
   margin-bottom: 1em;
 }
+img{
+  max-width: 100%;
+}
 
 p{
   font-family: Arial, sans-serif;
