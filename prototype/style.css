@@ -1,8 +1,92 @@
-body {
+/**---document styling---**/
+*{
+  box-sizing: border-box;
+}
+/*---document styling ends--*/
+
+
+/*--body styling begins---*/
+body{
+  background-color: #E8D69F;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
   max-width: 1000px;
   padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
 }
+
+/*---body styling ends---*/
+
+
+/*---navigation styling begins---*/
+nav {
+  background-color: white;
+  margin: .2em;
+}
+.nav{
+  margin: .5em;
+  padding: .5em;
+}
+.home{
+  margin: .5em;
+  padding: .5em;
+  color: #990100;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 500px){
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*---navigation styling ends---*/
+
+
+/*---header styling begins---*/
+header{
+  background-image: url("Taco.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: brown;
+  border: 10em;
+  background-size: cover;
+  height: 400px;
+}
+h1{
+  font-family: 'Amaranth', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  color: white;
+}
+h2{
+  font-family: 'Source Serif Pro',serif;
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: .5em;
+  color: white;
+}
+li{
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+}
+/*---header styling ends---*/
+
+/*---main styling begins---*/
+p{
+  font-family: 'Futura', sans-serif;
+  font-size: .9em;
+  max-width: 600px;
+  padding-left: 1.5em;
+}
+.images{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+/*---main styling ends---*/
 
 div, section, main, aside, header, footer {
   border: 1px solid lightgray;
@@ -13,6 +97,9 @@ img{
   max-width: 100%;
 }
 
+
 p{
   font-family: Arial, sans-serif;
 }
+/*---fonts---*/
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Asap|Bigelow+Rules|Bitter|Boogaloo|Cabin|Chewy|Josefin+Sans|Libre+Franklin|Merriweather+Sans|Source+Serif+Pro" rel="stylesheet">
