@@ -24,8 +24,9 @@ nav {
   margin: .2em;
 }
 .nav{
-  margin: .5em;
-  padding: .5em;
+  display: block;
+  border-bottom: 1px solid #000;
+  padding: 1em;
 }
 .home{
   margin: .5em;
@@ -37,8 +38,11 @@ nav {
 }
 @media screen and (min-width: 500px){
   .nav{
-    display: flex;
+
     justify-content: space-between;
+    display: inline-block;
+    margin: 0 0.5em;
+  }
   }
 }
 /*---navigation styling ends---*/
@@ -63,7 +67,7 @@ h1{
 h2{
   font-family: 'Source Serif Pro',serif;
   font-size: 1.5em;
-  margin: 0;
+  margin: 0auto;
   padding-top: .5em;
   color: white;
 }
@@ -80,11 +84,16 @@ p{
   font-size: .9em;
   max-width: 600px;
   padding-left: 1.5em;
+  text-align: center;
 }
 .images{
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
+
+
+}
+
 }
 /*---main styling ends---*/
 
@@ -92,6 +101,7 @@ div, section, main, aside, header, footer {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
+  text-align: center;
 }
 img{
   max-width: 100%;
@@ -99,7 +109,7 @@ img{
 
 
 p{
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 /*---fonts---*/
 <link href="https://fonts.googleapis.com/css?family=Amaranth|Asap|Bigelow+Rules|Bitter|Boogaloo|Cabin|Chewy|Josefin+Sans|Libre+Franklin|Merriweather+Sans|Source+Serif+Pro" rel="stylesheet">
