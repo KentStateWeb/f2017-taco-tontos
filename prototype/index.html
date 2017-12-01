@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color= "#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Page Description Goes Here">
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Oswald:600');
+  </style>
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+</style>
   </head>
   <body>
     <title> Taco Tontos </title>
-    <nav>
-    <div class="nav">
-      <div class="home"> <a href="menu.html"> Menu </a></div>
-      <div class= "home"> <a href="locations.html"> Locations</a> </div>
-      <div class="home" "logo"> <a href="index.html"><img src="logo.png" alt="Taco Tontos logo"> </a></div>
-      <div class="home"> <a href="about.html"> About Us</a> </div>
-      <div class="home"> <a href="whatsnew.html"> What's New</a> </div>
-    </div>
-    </nav>
     <header>
-      <h1> Welcome To Taco Tontos </h1>
-          <h2> Choose a Location to get Started </h3>
-          <ul>
-            <li> <a href="f2017-taco-tontos/prototype/kent"> Kent</a> </li>
-            <li> <a href="f2017-taco-tontos/prototype/lakewood"> Lakewood </a> </li>
-          </ul>
-    </header>
+      <div class="surrounding">
+      <a href="#menu" class="menu-link">
+    <div class="menu-link__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</a>
+<nav id="menu" role="navigation">
+            <ul class="menu-dropdown">
+                <li class="ham"><a href="menu.html">Menu</a></li>
+                <li class="ham"><a href="locations.html">Location</a></li>
+                <li class="ham"><a href="about.html">About</a></li>
+                <li class="ham"><a href="whatsnew.html">What's New</a></li>
+                <li class="ham"><a href="catering.html">Catering</a></li>
+            </ul>
+</nav>
+</div>
+    <h1> Food for </br> Everyone</h1>
+  </header>
+    <body>
     <main>
-      <h2> Fresh, Original, Delicious! </h2>
-          <p> In a prefab world of processed and prepackaged food, Taco Tonto's is wholesome and original. Our food is cut, measured and cooked by hand from scratch. It's one of a kind, and it is delicious. Please refer to either <strong> Kent </strong> or <strong> Lakewood </strong> <a href="https://www.facebook.com/tacotontos/"> Facebook page </a> for daily specials at each location. </p>
-          <ul>
-            <li class="images"><img src="bowl.jpeg" alt="Burrito Bowl"></a></li>
-            <li class="images"><img src="Burrito.jpeg" alt="Burrito"></a></li>
-            <li class="images"><img src="DRINKS.jpeg" alt="alcoholic beverages"></a></li>
-            <li class="images"><img src="salad.jpeg" alt="taco salad"></a></li>
-            <li class="images"><img src="Sides.jpeg" alt="variety of sides avaliable"></a></li>
-            <li class="images"><img src="Taco.jpeg" alt="Taco"></a></li>
-          </ul>
+      <h3> Our Food </h3>
+      <h4> Fresh, Original, and Delicious!</h4>
+          <p> In a prefab world of processed and prepackaged food, Taco Tonto's is wholesome and original. Our food is cut, measured and cooked by hand from scratch. It's one of a kind, and it is delicious. Please refer to either <strong> Kent </strong> or <strong> Lakewood </strong> Facebook page for daily specials at each location. </p>
+      <div><a href="https://www.facebook.com/tacotontos/" class="button"> See Speicals</a></div>
     </main>
+    <span>
+    <img src="lily-lvnatikk-365344.jpg" alt= Bowls of food></a>
+    <h2>Tasty with a <span class="twist">Twist</span></h2>
+    <div><a href="menu.html" class="button tasty"> See the Fresh Ingredients we use</a></div>
+  </span>
+  </body>
     <footer>
-        <h4> Stay Connected </h4>
+      <h5> Subscribe to our newsletter</h5>
+      <p class="footer"> Subscribe to receive Taco Tontos updates and offers via email. Recurring automated marketing messages will be sent to the email address provided. Consent is not a condition of purchase. View Privacy Policy.</p>
+        <h5> Stay Connected </h5>
         <ul>
           <li> <a href="https://www.facebook.com/tacotontos/"> Facebook </a></li>
           <li> <a href="https://www.instagram.com/explore/locations/40794453/"> Instagram </a> </li>
           <li> <a href="https://twitter.com/TacoTontos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> Twitter </a> </li>
         </ul>
         <div class="footer">
-          <div> @2106 Taco Tontos. All Rights Reserved </div>
-          <div> Mexican Restaurant </div>
-          <div> Kent and Lakewood, Ohio </div>
+          <div> Privacy </div>
+          <div> Terms</div>
+          <div> Site Map </div>
+      <p> Copyright 2016 Taco Tontos Restaurant Corporation</p>
         </div>
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="ttjavascript.js"></script>
     </body>
     </html>
