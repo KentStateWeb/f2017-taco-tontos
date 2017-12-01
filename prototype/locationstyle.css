@@ -1,0 +1,46 @@
+/*--body styling begins---*/
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  padding: 1em;
+}
+
+/*---body styling ends---*/
+
+header{
+  background-image: url("salad.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: 10em;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+img{
+  max-width: 50%;
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.4em;
+  margin: 0;
+  margin-left: 0.1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2.3em;
+
+}
+
+h4{
+  text-align: center;
+  font-size:1em;
+  padding-top: .2em;
+  margin-top: 0.4em;
+  color: rgb(250,196,90);
+}
