@@ -210,11 +210,20 @@ img{
 }
 .button{
   background-color: rgb(107,142,22);
-  padding: 0.5em;
+  padding: .5em;
   font-family: 'Futura', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+<<<<<<< HEAD
+=======
+  border-radius: 6px;
+  justify-content: center;
+  transition: .3s background-color ease-in-out;
+  display: inline-block;
+  align-items: center;
+
+>>>>>>> 7c95ad270faf3e838395227d8f2e4405a728cf5b
 
 }
 /*--body styling ends--*/
