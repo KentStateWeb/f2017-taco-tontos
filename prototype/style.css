@@ -215,6 +215,7 @@ img{
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+
 }
 /*--body styling ends--*/
 /*---footer styling begins--*/
@@ -228,6 +229,7 @@ h5{
   font-size: 0.9em;
   text-transform: uppercase;
   margin-bottom: 0em;
+  text-align: left;
 }
 .footer{
   font-size: 0.7em;
@@ -235,6 +237,36 @@ h5{
   margin-left: -1.5em;
   margin-top: 0em;
   margin-bottom: -1em;
+  max-width: 300px;
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-weight: 300;
+}
+li{
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+  text-align: left;
+  color: black;
+}
+.stay{
+  text-align: left;
+}
+.nav-bar__link{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: darkblue;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+
 }
 
 /*---footer styling ends---*/
