@@ -278,5 +278,97 @@ li{
 }
 
 /*---footer styling ends---*/
+/*--- media queries ---*/
+  @media screen and (min-width:600px) {
+
+
+  h1{
+      font-size: 5em;
+    }
+h2{
+  font-size: 5.5em;
+}
+  h3{
+    font-size: 2em;
+  }
+  h4{
+    font-size: 1.5;
+  }
+h5{
+  font-size: 1.2em;
+
+}
+footer{
+  margin-top: 12em;
+  padding-top: 5em;
+}
+.footer{
+  font-size: 0.9em;
+  max-width: 600px;
+  text-align: center;
+}
+ p{
+    text-align: center;
+    margin: 0auto;
+    padding-left: 15em;
+  }
+
+  li.ham{
+    font-size: 1em;
+  }
+
+
+  li{
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+  @media screen and (min-width:900px) {
+    h1{
+        font-size: 8em;
+      }
+  h2{
+    font-size: 7em;
+  }
+    h3{
+      font-size: 3em;
+    }
+    h4{
+      font-size: 2em;
+    }
+  h5{
+    font-size: 1.2em;
+
+  }
+  footer{
+    margin-top: 24em;
+    padding-top: 10em;
+  }
+  .footer{
+    font-size: 0.9em;
+    max-width: 600px;
+    text-align: center;
+  }
+   p{
+      text-align: center;
+      margin: 0auto;
+      padding-left: 15em;
+    }
+
+    li.ham{
+      font-size: 1em;
+    }
+    li{
+      font-size: 1em;
+      display: flex;
+      justify-content: space-between;
+    }
+    body{
+      background-color: lightblue;
+      text-align: center;
+    }
+  }
 /*---fonts---*/
 <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Oswald:600" rel="stylesheet">
