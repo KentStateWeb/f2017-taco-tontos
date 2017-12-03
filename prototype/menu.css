@@ -1,0 +1,297 @@
+/**---document styling---**/
+*{
+  box-sizing: border-box;
+}
+/*---document styling ends--*/
+/*--body styling begins---*/
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  padding: 1em;
+}
+/*---body styling ends---*/
+/*---hamburger---*/
+.surrounding{
+  background-color: white;
+  position: fixed;
+  top: 30px;
+  height: 50px;
+  margin-left: -.8em;
+  width: 100%;
+}
+a.menu-link {
+        float: right;
+        display: block;
+        padding: 1em;
+        width: 125px;
+        }
+
+/* Adds Code for Pure CSS Hamburger Button */
+.menu-dropdown{
+  float: right;
+  background-color: white;
+}
+.menu-link__hamburger {
+    margin-top: -.2em;
+    margin-right:.5em;
+    text-align: center;
+    width: 33px;
+    float: right;
+    transform: translate(0,0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+a.menu-link span {
+  display: block;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  border-radius: 3px; /* Adjust the rounding of the hamburger here */
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+a.menu-link span:first-child {
+  transform-origin: 0% 0%;
+}
+
+
+a.menu-link span:nth-child(3) {
+  transform-origin: 0% 100%;
+}
+
+.menu-link.active .menu-link__hamburger {
+    transform: translate(10px, 0);
+}
+
+.menu-link.active span {
+  opacity: 1;
+  background: black;
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+.menu-link.active span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-link.active span:nth-child(3){
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+nav[role=navigation] {
+            clear: both;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        .js nav[role=navigation] {
+            overflow: hidden;
+            max-height: 0;
+        }
+        nav[role=navigation].active {
+            max-height: 15em;
+        }
+        nav[role=navigation] ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav[role=navigation] li a {
+            display: block;
+            padding: 0.8em;
+        }
+
+        @media screen and (min-width:800px) {
+            a.menu-link {
+               display: none;
+            }
+            .js nav[role=navigation] {
+                max-height: none;
+            }
+            nav[role=navigation] ul {
+                margin: 0 0 0 -0.25em;
+                border: 0;
+            }
+
+            nav[role=navigation]  li {
+                display: inline-block;
+                margin: 0 0.25em;
+            }
+            nav[role=navigation] li a {
+                border: 0;
+            }
+        }
+
+/*--end hamburger---*/
+/*---header styling begins---*/
+.containers{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12em;
+  transform: translate(-50%,-50%);
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  background-color: lightgrey;
+}
+.card_header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  margin-left: 0.1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*---header styling ends---*/
+/*---body and main styling begings---*/
+.item{
+  background-color: rgba(250,196,90,0.6);
+  padding: 1em;
+  margin: 1em;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 5em;
+  color: white;
+}
+.different{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  padding-bottom: 0em;
+}
+.sub{
+    text-align: center;
+    font-size:1.2em;
+    color: rgb(250,196,90);
+}
+h4{
+  text-align: center;
+  font-size:1.3em;
+  margin-top: 0.4em;
+  color: black;
+}
+img{
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+h6{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: .7em;
+  padding-top: 0;
+}
+p{
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: .7em;
+  padding-top: 0;
+  max-width: 200px;
+}
+
+/*--body styling ends--*/
+
+/*---main styling ends---*/
+/*---footer styling begins--*/
+footer{
+  border-top:8px solid rgb(250,196,90);
+  margin-top: 6.5em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 8em;
+  padding-top: 3em;
+}
+h5{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 0em;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer{
+  font-size: 0.7em;
+  text-align:center;
+  margin: 0 auto;
+  max-width: 300px;
+
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
+li{
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+}
+.stay{
+  text-align: center;
+  margin: 0 auto;
+}
+.nav-bar__link{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: darkblue;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+
+}
+
+/*---footer styling ends---*/
+
+/*---fonts---*/
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Oswald:600" rel="stylesheet">
+
+
+
+/*--main styling menu--*/
+/*--nav styling---*/

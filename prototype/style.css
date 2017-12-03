@@ -137,24 +137,25 @@ nav[role=navigation] {
 /*--end hamburger---*/
 
 /*---header styling begins---*/
-header{
-  background-image: url("calum-lewis-391368.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  border: 10em;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 h1{
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3.4em;
+  font-size: 3.5em;
   margin: 0;
   margin-left: 0.1em;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 2.3em;
 }
 /*---header styling ends---*/
 
@@ -168,7 +169,6 @@ h3{
   text-align: center;
   font-size: 1.7em;
   background-color: white;
-  margin-top: -2em;
   padding-top: 1em;
   margin-bottom: 0;
 }
@@ -210,27 +210,22 @@ img{
 }
 .button{
   background-color: rgb(107,142,22);
-  padding: .5em;
+  padding: 0.5em;
   font-family: 'Futura', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-<<<<<<< HEAD
-=======
-  border-radius: 6px;
-  justify-content: center;
-  transition: .3s background-color ease-in-out;
-  display: inline-block;
-  align-items: center;
-
->>>>>>> 7c95ad270faf3e838395227d8f2e4405a728cf5b
-
 }
 /*--body styling ends--*/
+
 /*---footer styling begins--*/
 footer{
-  border-top:2px solid lightgrey;
+  border-top:8px solid rgb(250,196,90);
+  margin-top: 6.5em;
+  text-align: center;
+  margin: 0 auto;
   margin-top: 8em;
+  padding-top: 3em;
 }
 h5{
   font-family: 'Helvetica', sans-serif;
@@ -238,21 +233,23 @@ h5{
   font-size: 0.9em;
   text-transform: uppercase;
   margin-bottom: 0em;
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
 }
 .footer{
   font-size: 0.7em;
-  text-align:left;
-  margin-left: -1.5em;
-  margin-top: 0em;
-  margin-bottom: -1em;
+  text-align:center;
+  margin: 0 auto;
   max-width: 300px;
+
 }
 a{
   text-decoration: none;
   list-style-type: none;
   color: black;
   font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
 }
 li{
   text-decoration: none;
@@ -260,11 +257,13 @@ li{
   font-family: 'Helvetica', sans-serif;
   font-weight: 200;
   font-size: 0.7em;
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
   color: black;
 }
 .stay{
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
 }
 .nav-bar__link{
   font-family: 'Helvetica', sans-serif;
