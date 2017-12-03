@@ -8,39 +8,48 @@ body{
 
 /*---body styling ends---*/
 
-header{
-  background-image: url("salad.jpeg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  border: 10em;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
+.salad{
+  max-width: 100%;
 }
-
 img{
-  max-width: 50%;
+  max-width: 60%;
+  margin: 0 auto;
   text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5em;
 }
 
 h1{
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3.4em;
+  font-size: 3em;
   margin: 0;
   margin-left: 0.1em;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 2.3em;
-
+}
+p{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  max-width: 600px;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  text-align: center;
 }
 
 h4{
   text-align: center;
+  margin: 0 auto;
   font-size:1em;
   padding-top: .2em;
   margin-top: 0.4em;
   color: rgb(250,196,90);
+}
+h5{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1em;
 }
