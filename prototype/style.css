@@ -4,17 +4,6 @@
 }
 /*---document styling ends--*/
 
-
-
-/*--body styling begins---*/
-body{
-  margin: 0;
-  padding: 0;
-  max-width: 1000px;
-  padding: 1em;
-}
-
-/*---body styling ends---*/
 /*---hamburger---*/
 .surrounding{
   background-color: white;
@@ -138,6 +127,7 @@ nav[role=navigation] {
 
 /*---header styling begins---*/
 .container{
+  margin-top: 0 auto;
   position: relative;
   text-align: center;
   color: white;
@@ -158,9 +148,23 @@ h1{
   text-transform: uppercase;
 }
 /*---header styling ends---*/
+/*---main styling begins---*/
+main{
+  background-color: white;
+  margin-top: -2.5em;
+  margin-bottom: -2em;
+  padding-bottom: 0em;
+}
+/*---main styling ends---*/
 
-
-/*---body and main styling begings---*/
+/*--body styling begins---*/
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  padding: 1em;
+  background-color: rgba(107,142,22, 0.7);
+}
 
 h3{
   font-family: 'Roboto', sans-serif;
@@ -169,7 +173,7 @@ h3{
   text-align: center;
   font-size: 1.7em;
   background-color: white;
-  padding-top: 1em;
+  padding-top: 1.7em;
   margin-bottom: 0;
 }
 h4{
@@ -181,24 +185,21 @@ h4{
 }
 p{
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   line-height: 1.5em;
-  max-width: 600px;
+  max-width: 400px;
   padding-top: 1em;
-  padding-bottom: 1.5em;
-  padding-left: 1.5em;
+  padding-bottom: 2em;
+  margin: 0 auto;
   text-align: center;
 }
-/*---main styling ends---*/
 h2{
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3.4em;
+  font-size: 3em;
   text-transform: uppercase;
-  margin: 0;
-  margin-left: 0.1em;
+  margin: 0 auto;
   color: white;
-  text-align: center;
-  margin-top: -3.5em;
+  text-align: right;
 }
 img{
   flex-wrap: wrap;
@@ -208,41 +209,83 @@ img{
 .twist{
   color: rgb(250,196,90);
 }
+.overlay {
+  position: relative;
+}
+.overlay:before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(22,1,0, 0.4);
+}
+.buttontwist{
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+.buttonholder{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+}
 .button{
   background-color: rgb(107,142,22);
   padding: 0.5em;
+  border-radius: 6px;
   font-family: 'Futura', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  margin: 0 auto;
+  text-align: center;
 }
+.containerbot{
+  margin-top: 0 auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  padding-bottom: 3em;
+}
+.centeredbot{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top:-1.5em;
+}
+
 /*--body styling ends--*/
 
 /*---footer styling begins--*/
 footer{
   border-top:8px solid rgb(250,196,90);
-  margin-top: 6.5em;
   text-align: center;
   margin: 0 auto;
-  margin-top: 8em;
-  padding-top: 3em;
+  padding-top: 1em;
+  background-color: white;
 }
 h5{
   font-family: 'Helvetica', sans-serif;
   font-weight: 200;
-  font-size: 0.9em;
+  font-size: 0.7em;
   text-transform: uppercase;
   margin-bottom: 0em;
   text-align: center;
   margin: 0 auto;
 }
 .footer{
-  font-size: 0.7em;
+  font-size: 0.5em;
   text-align:center;
   margin: 0 auto;
   max-width: 300px;
-
 }
+
 a{
   text-decoration: none;
   list-style-type: none;
@@ -251,14 +294,15 @@ a{
   text-align: center;
   margin: 0 auto;
 }
+
 li{
   text-decoration: none;
   list-style-type: none;
   font-family: 'Helvetica', sans-serif;
   font-weight: 200;
-  font-size: 0.7em;
-  text-align: center;
+  font-size: 0.5em;
   margin: 0 auto;
+  text-align: center;
   color: black;
 }
 .stay{
@@ -268,9 +312,9 @@ li{
 .nav-bar__link{
   font-family: 'Helvetica', sans-serif;
   font-weight: 200;
-  font-size: 0.7em;
+  font-size: 0.4em;
   text-decoration: none;
-  color: darkblue;
+  color: black;
   margin-left: 1em;
   margin-right: 1em;
   text-align: left;
@@ -280,95 +324,315 @@ li{
 /*---footer styling ends---*/
 /*--- media queries ---*/
   @media screen and (min-width:600px) {
-
-
-  h1{
-      font-size: 5em;
-    }
-h2{
-  font-size: 5.5em;
+.ourfood{
+  display: none;
+  content: url("rustic-vegan-459510.jpeg");
 }
-  h3{
-    font-size: 2em;
+.surrounding{
+      margin-left: -1em;
+    }
+
+h1{
+      font-size: 5em;
   }
-  h4{
+
+h2{
+  font-size: 4em;
+  }
+
+h3{
+  font-size: 2em;
+  }
+
+h4{
     font-size: 1.5;
   }
-h5{
-  font-size: 1.2em;
 
+h5{
+  font-size: 0.8em;
 }
 footer{
-  margin-top: 12em;
-  padding-top: 5em;
+  padding-top: 2em;
 }
+
 .footer{
-  font-size: 0.9em;
-  max-width: 600px;
+  font-size: 0.7em;
+  max-width: 450px;
+  margin: 0 auto;
   text-align: center;
-}
- p{
+  }
+p{
     text-align: center;
-    margin: 0auto;
-    padding-left: 15em;
+    margin: 0 auto;
   }
 
-  li.ham{
+li.ham{
     font-size: 1em;
   }
 
+li{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 auto;
+  }
+.buttontwist{
+    margin-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 3.5em;
+  }
+.buttonholder{
+    padding-bottom: 3em;
+    padding-top: 1.5em;
+  }
+}
+@media screen and (min-width: 750px){
 
-  li{
-    font-size: 1em;
-    display: flex;
-    justify-content: space-between;
+.ourfood{
+  content: url("rustic-vegan-459510.jpeg");
+  max-width: 400px;
+  max-height: 400px;
+  padding-left: 4em;
+  display: block;
+  }
+.holder{
+  display: flex;
+}
+.top{
+  padding-top: 5em;
+  max-width: 350px;
+  padding-left: 2em;
+}
+p{
+  font-size: 1em;
+}
+h1{
+    font-size: 5em;
+  }
+
+h2{
+  font-size: 6em;
+  text-align: center;
+  }
+
+h3{
+  font-size: 2.3em;
+  padding-top: 2.5em;
+  }
+
+h4{
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+  }
+
+h5{
+  font-size: 0.8em;
+}
+footer{
+  padding-top: 2em;
+}
+
+.footer{
+  font-size: 0.7em;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  }
+p{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+li.ham{
+    font-size: 0.9em;
+    padding-top:.2em;
+  }
+
+li{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 auto;
+  }
+.buttontwist{
+    margin-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 3.5em;
+  }
+.buttonholder{
+    padding-bottom: 4em;
+    padding-top: 2em;
   }
 }
 
-  @media screen and (min-width:900px) {
-    h1{
-        font-size: 8em;
-      }
-  h2{
-    font-size: 7em;
-  }
-    h3{
-      font-size: 3em;
-    }
-    h4{
-      font-size: 2em;
-    }
-  h5{
-    font-size: 1.2em;
+@media screen and (min-width:900px) {
 
+  .ourfood{
+    content: url("rustic-vegan-459510.jpeg");
+    max-width: 450px;
+    max-height: 450px;
+    padding-left: 4em;
+    display: block;
+    }
+  .holder{
+    display: flex;
+  }
+  .top{
+    padding-top: 5em;
+    max-width: 450px;
+    padding-left: 2em;
+    padding-right: 0em;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  h1{
+      font-size: 5.2em;
+    }
+
+  h2{
+    padding-top: 0.7em;
+    font-size: 6.5em;
+    text-align: center;
+    }
+
+  h3{
+    font-size: 2.5em;
+    padding-top: 2.5em;
+    }
+
+  h4{
+      font-size: 1.4em;
+      padding-bottom: 1.5em;
+    }
+
+  h5{
+    font-size: 0.8em;
   }
   footer{
-    margin-top: 24em;
-    padding-top: 10em;
+    padding-top: 2em;
   }
+
   .footer{
-    font-size: 0.9em;
-    max-width: 600px;
+    font-size: 0.7em;
+    max-width: 450px;
+    margin: 0 auto;
     text-align: center;
-  }
-   p{
+    }
+  p{
       text-align: center;
-      margin: 0auto;
-      padding-left: 15em;
+      margin: 0 auto;
     }
 
-    li.ham{
-      font-size: 1em;
+  li.ham{
+      font-size: 0.9em;
+      padding-top:.2em;
     }
-    li{
-      font-size: 1em;
-      display: flex;
-      justify-content: space-between;
-    }
-    body{
-      background-color: lightblue;
+
+  li{
+      font-size: 0.7em;
       text-align: center;
+      margin: 0 auto;
     }
+  .buttontwist{
+      margin-top: 3em;
+      padding-bottom: 2em;
+      margin-bottom: 3.5em;
+    }
+  .buttonholder{
+      padding-bottom: 4em;
+      padding-top: 2em;
+    }
+}
+@media screen and (min-width:1000px) {
+  body{
+   width: 90%;
+   margin: 0 auto;
+   max-width: 1200px;
   }
+.surrounding{
+        margin-left: -8em;
+      }
+  .peppers{
+    max-height: 700px;
+    margin-top: -3em;
+  }
+  .ourfood{
+    content: url("rustic-vegan-459510.jpeg");
+    max-width: 450px;
+    max-height: 450px;
+    padding-left: 4em;
+    display: block;
+    }
+  .holder{
+    display: flex;
+  }
+  .top{
+    padding-top: 5em;
+    max-width: 600px;
+    padding-left: 5em;
+    padding-right: -2em;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  h1{
+      font-size: 5.2em;
+    }
+
+  h2{
+    padding-top: 0.7em;
+    font-size: 6.5em;
+    text-align: center;
+    }
+
+  h3{
+    font-size: 2.5em;
+    padding-top: 2.5em;
+    }
+
+  h4{
+      font-size: 1.4em;
+      padding-bottom: 1.5em;
+    }
+
+  h5{
+    font-size: 0.8em;
+  }
+  footer{
+    padding-top: 2em;
+  }
+
+  .footer{
+    font-size: 0.7em;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    }
+  p{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+  li.ham{
+      font-size: 0.9em;
+      padding-top:.2em;
+    }
+
+  li{
+      font-size: 0.7em;
+      text-align: center;
+      margin: 0 auto;
+    }
+  .buttontwist{
+      margin-top: 3em;
+      padding-bottom: 2em;
+      margin-bottom: 3.5em;
+    }
+  .buttonholder{
+      padding-bottom: 4em;
+      padding-top: 2em;
+    }
+
+}
+
 /*---fonts---*/
 <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Oswald:600" rel="stylesheet">
