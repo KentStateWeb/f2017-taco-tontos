@@ -211,6 +211,9 @@ img{
 }
 .overlay {
   position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 .overlay:before {
   content:"";
@@ -249,7 +252,6 @@ img{
   position: relative;
   text-align: center;
   color: white;
-  max-width: 100%;
   padding-bottom: 3em;
 }
 .centeredbot{
@@ -324,6 +326,10 @@ li{
 /*---footer styling ends---*/
 /*--- media queries ---*/
   @media screen and (min-width:600px) {
+.ourstory{
+      content: url("shane-rounce-384251.jpg");
+      display:none;
+      }
 .ourfood{
   display: none;
   content: url("rustic-vegan-459510.jpeg");
@@ -386,7 +392,13 @@ li{
   }
 }
 @media screen and (min-width: 750px){
-
+  .ourstory{
+    content: url("shane-rounce-384251.jpg");
+    max-width: 450px;
+    max-height: 450px;
+    padding-left: 4em;
+    display: block;
+    }
 .ourfood{
   content: url("rustic-vegan-459510.jpeg");
   max-width: 400px;
@@ -465,6 +477,13 @@ li{
 
 @media screen and (min-width:900px) {
 
+  .ourstory{
+    content: url("shane-rounce-384251.jpg");
+    max-width: 450px;
+    max-height: 450px;
+    padding-left: 4em;
+    display: block;
+    }
   .ourfood{
     content: url("rustic-vegan-459510.jpeg");
     max-width: 450px;
@@ -555,6 +574,13 @@ li{
     max-height: 700px;
     margin-top: -3em;
   }
+  .ourstory{
+    content: url("shane-rounce-384251.jpg");
+    max-width: 450px;
+    max-height: 450px;
+    padding-left: 4em;
+    display: block;
+    }
   .ourfood{
     content: url("rustic-vegan-459510.jpeg");
     max-width: 450px;
