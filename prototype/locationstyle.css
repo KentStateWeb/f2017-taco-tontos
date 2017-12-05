@@ -1,17 +1,9 @@
-/*--body styling begins---*/
-body{
-  margin: 0;
-  padding: 0;
-  max-width: 1000px;
-  padding: 1em;
-}
 
-/*---body styling ends---*/
 
 .salad{
   max-width: 100%;
 }
-img{
+.map{
   max-width: 60%;
   margin: 0 auto;
   text-align: center;

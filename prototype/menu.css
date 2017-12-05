@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   max-width: 1000px;
-  padding: 1em;
+  padding: 0 .7em;
   background-color: rgba(107,142,22, 0.7);
 }
 /*---body styling ends---*/
@@ -16,10 +16,11 @@ body{
 .surrounding{
   background-color: white;
   position: fixed;
+  left: 0;
   top: 30px;
   height: 50px;
-  margin-left: -.8em;
   width: 100%;
+  z-index: 100;
 }
 a.menu-link {
         float: right;
@@ -153,7 +154,6 @@ nav[role=navigation] {
   color: white;
   padding: 0.5em;
   margin: 1em;
-  background-color: lightgrey;
   max-width: 300px;
   max-height: 300px;
   margin-left: 5em;
@@ -166,13 +166,7 @@ nav[role=navigation] {
   transform: translate(-50%,-50%);
 }
 h1{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 2.5em;
-  margin: 0;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 0em;
+  padding-bottom: 0.7em;
 }
 /*---header styling ends---*/
 
@@ -187,14 +181,6 @@ main{
   background-color: rgba(250,196,90,0.6);
   padding: 1em;
   margin: 1em;
-}
-h3{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.7em;
-  color: white;
 }
 h4{
   text-align: center;
@@ -230,7 +216,6 @@ img{
     color: rgb(250,196,90);
     font-weight: 600;
     padding-top: .5em;
-    margin-top: -2em;
 }
 img{
   flex-wrap: wrap;
@@ -319,9 +304,6 @@ li{
   display: none;
   content: url("rustic-vegan-459510.jpeg");
 }
-.surrounding{
-      margin-left: -1em;
-    }
 
 h1{
       font-size: 5em;
@@ -407,7 +389,6 @@ h2{
 
 h3{
   font-size: 2.3em;
-  padding-top: 2.5em;
   }
 
 h4{
@@ -487,7 +468,6 @@ li{
 
   h3{
     font-size: 2.5em;
-    padding-top: 2.5em;
     }
 
   h4{
@@ -539,9 +519,6 @@ li{
    margin: 0 auto;
    max-width: 1200px;
   }
-.surrounding{
-        margin-left: -8em;
-      }
   .peppers{
     max-height: 700px;
     margin-top: -3em;
@@ -577,7 +554,6 @@ li{
 
   h3{
     font-size: 2.5em;
-    padding-top: 2.5em;
     }
 
   h4{

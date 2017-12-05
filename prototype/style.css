@@ -5,13 +5,20 @@
 /*---document styling ends--*/
 
 /*---hamburger---*/
+.logo{
+  width:70px;
+  display: inline-block;
+  margin-left: 2em;
+  margin-top: -.5em;
+}
 .surrounding{
   background-color: white;
   position: fixed;
+  left: 0;
   top: 30px;
   height: 50px;
-  margin-left: -.8em;
   width: 100%;
+  z-index: 100;
 }
 a.menu-link {
         float: right;
@@ -99,7 +106,6 @@ nav[role=navigation] {
         }
         nav[role=navigation] li a {
             display: block;
-            padding: 0.8em;
         }
 
         @media screen and (min-width:800px) {
@@ -147,22 +153,26 @@ h1{
   text-align: center;
   text-transform: uppercase;
 }
+li.select:hover{
+  font-weight: 600;
+  border-bottom: 3px solid red;
+}
 /*---header styling ends---*/
 /*---main styling begins---*/
 main{
   background-color: white;
-  margin-top: -2.5em;
   margin-bottom: -2em;
   padding-bottom: 0em;
 }
 /*---main styling ends---*/
-
+/*---menu styling---*/
+/*---menu styling ends---*/
 /*--body styling begins---*/
 body{
   margin: 0;
   padding: 0;
   max-width: 1000px;
-  padding: 1em;
+  padding: 0 1em;
   background-color: rgba(107,142,22, 0.7);
 }
 
@@ -172,9 +182,18 @@ h3{
   text-transform: uppercase;
   text-align: center;
   font-size: 1.7em;
-  background-color: white;
-  padding-top: 1.7em;
-  margin-bottom: 0;
+  padding-top: 1.5em;
+  margin: 0;
+}
+.menuitems{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7em;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 2.3em;
 }
 h4{
   text-align: center;
@@ -225,6 +244,22 @@ img{
   right: 0;
   background: rgba(22,1,0, 0.4);
 }
+.overlays {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.overlays:before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(22,1,0, 0.2);
+}
 .buttontwist{
   text-align: center;
   margin-top: 2em;
@@ -261,8 +296,15 @@ img{
   transform: translate(-50%,-50%);
   margin-top:-1.5em;
 }
+.social{
+  margin: 0;
+  padding: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
 
 /*--body styling ends--*/
+/*---menu page styling---*/
 
 /*---footer styling begins--*/
 footer{
@@ -325,7 +367,18 @@ li{
 
 /*---footer styling ends---*/
 /*--- media queries ---*/
+@media screen and (max-width:600px) {
+ul.menu-dropdown{
+    width: 50%;
+    font-size: 1.7em;
+  }
+}
   @media screen and (min-width:600px) {
+    ul.menu-dropdown{
+        margin-top: 0.3em;
+        font-size: 1.7em;
+
+      }
 .ourstory{
       content: url("shane-rounce-384251.jpg");
       display:none;
@@ -334,10 +387,6 @@ li{
   display: none;
   content: url("rustic-vegan-459510.jpeg");
 }
-.surrounding{
-      margin-left: -1em;
-    }
-
 h1{
       font-size: 5em;
   }
@@ -392,6 +441,10 @@ li{
   }
 }
 @media screen and (min-width: 750px){
+  nav[role=navigation] li a {
+    padding-top: .3em;
+    margin-right: 1.5em;
+  }
   .ourstory{
     content: url("shane-rounce-384251.jpg");
     max-width: 450px;
@@ -408,6 +461,7 @@ li{
   }
 .holder{
   display: flex;
+  margin-bottom: 6em;
 }
 .top{
   padding-top: 5em;
@@ -474,6 +528,10 @@ li{
     padding-top: 2em;
   }
 }
+@media screen and (min-width: 800px){
+  .surrounding{
+    display: flex;
+  }
 
 @media screen and (min-width:900px) {
 
@@ -567,9 +625,6 @@ li{
    margin: 0 auto;
    max-width: 1200px;
   }
-.surrounding{
-        margin-left: -8em;
-      }
   .peppers{
     max-height: 700px;
     margin-top: -3em;
