@@ -20,6 +20,7 @@
   width: 100%;
   z-index: 100;
   margin-top: -2em;
+  border-bottom: 3px solid lightgrey;
 }
 a.menu-link {
         float: right;
@@ -134,10 +135,10 @@ nav[role=navigation] {
 
 /*---header styling begins---*/
 .container{
-  margin-top: 0 auto;
   position: relative;
   text-align: center;
   color: white;
+  margin-left: 4.5em;
 }
 .centered{
   position: absolute;
@@ -376,12 +377,17 @@ ul.menu-dropdown{
   }
 }
   @media screen and (min-width:600px) {
-    ul.menu-dropdown{
+.container{
+  text-align: center;
+  margin-right: 1.5em;
+}
+ul.menu-dropdown{
         margin-top: 0.3em;
         font-size: 1.7em;
       }
   .flex{
     display: flex;
+    margin-right: 3.5em;
   }
 .ourstory{
       content: url("shane-rounce-384251.jpg");
@@ -445,6 +451,14 @@ li{
   }
 }
 @media screen and (min-width: 750px){
+
+  .flex{
+    display: flex;
+    margin-left: 10.5em;
+  }
+.surrounding{
+  margin-top: -1.9em;
+}
 .logo{
   width: 90px;
 }
@@ -479,7 +493,7 @@ p{
   font-size: 1em;
 }
 h1{
-    font-size: 5em;
+    font-size: 6em;
   }
 
 h2{
@@ -542,6 +556,11 @@ li{
   ul.menu-dropdown{
     padding-right: 1.5em;
   }
+  .flex{
+    display: flex;
+    margin-right: 3.5em;
+  }
+  }
 
 @media screen and (min-width:900px) {
 ul.menu-dropdown{
@@ -574,7 +593,8 @@ ul.menu-dropdown{
     font-size: 1.2em;
   }
   h1{
-      font-size: 5.2em;
+      font-size: 7em;
+      padding-top: 2em;
     }
 
   h2{
@@ -672,7 +692,7 @@ ul.menu-dropdown{
     font-size: 1.2em;
   }
   h1{
-      font-size: 5.2em;
+      font-size: 8.5em;
     }
 
   h2{
@@ -726,6 +746,10 @@ ul.menu-dropdown{
   .buttonholder{
       padding-bottom: 4em;
       padding-top: 2em;
+    }
+    .flex{
+      display: flex;
+      margin-right: 3.5em;
     }
 
 }
