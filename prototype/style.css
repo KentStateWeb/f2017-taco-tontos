@@ -444,9 +444,12 @@ li{
   }
 }
 @media screen and (min-width: 750px){
+.logo{
+  width: 90px;
+}
   nav[role=navigation] li a {
     padding-top: .3em;
-    margin-right: 1.5em;
+    margin-right: .5em;
   }
   .ourstory{
     content: url("shane-rounce-384251.jpg");
@@ -512,8 +515,8 @@ p{
   }
 
 li.ham{
-    font-size: 0.9em;
-    padding-top:.2em;
+    font-size: 0.7em;
+    padding-top:.3em;
   }
 
 li{
@@ -535,9 +538,14 @@ li{
   .surrounding{
     display: flex;
   }
+  ul.menu-dropdown{
+    padding-right: 1.5em;
+  }
 
 @media screen and (min-width:900px) {
-
+ul.menu-dropdown{
+  padding-right: 2em;
+}
   .ourstory{
     content: url("shane-rounce-384251.jpg");
     max-width: 450px;
@@ -603,8 +611,8 @@ li{
     }
 
   li.ham{
-      font-size: 0.9em;
-      padding-top:.2em;
+      font-size: 0.76em;
+      padding-top:.3em;
     }
 
   li{
@@ -623,6 +631,9 @@ li{
     }
 }
 @media screen and (min-width:1000px) {
+ul.menu-dropdown{
+  padding-right: 3em;
+}
   body{
    width: 90%;
    margin: 0 auto;
@@ -648,6 +659,7 @@ li{
     }
   .holder{
     display: flex;
+    padding-left: 4.5em;
   }
   .top{
     padding-top: 5em;
@@ -695,9 +707,8 @@ li{
       text-align: center;
       margin: 0 auto;
     }
-
   li.ham{
-      font-size: 0.9em;
+      font-size: 0.8em;
       padding-top:.2em;
     }
 
