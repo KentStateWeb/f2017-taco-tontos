@@ -223,7 +223,6 @@ h2{
   text-transform: uppercase;
   margin: 0 auto;
   color: white;
-  text-align: right;
 }
 img{
   flex-wrap: wrap;
@@ -594,7 +593,11 @@ li{
   .flex{
     display: flex;
   }
+  .locationflex{
+    display: flex;
   }
+  }
+
 
 @media screen and (min-width:900px) {
 .logo{
