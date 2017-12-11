@@ -376,7 +376,8 @@ li{
 /*--- media queries ---*/
 @media screen and (max-width: 450px){
 h1{
-  padding: 10em;
+  padding-top: 5em;
+  font-size: 4.5em;
 }
 }
 @media screen and (max-width:600px) {
