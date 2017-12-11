@@ -159,9 +159,11 @@ h1{
   text-transform: uppercase;
   margin-top: -5.5em;
 }
-li.select:hover:focusstate{
-  font-weight: 600;
+.ham:hover{
   border-bottom: 3px solid red;
+}
+li:hover{
+  color: rgb(250,196,90);
 }
 /*---header styling ends---*/
 /*---main styling begins---*/
@@ -308,7 +310,9 @@ img{
   padding-top: .5em;
   padding-bottom: .5em;
 }
-
+.menupages{
+  padding-bottom: 2em;
+}
 /*--body styling ends--*/
 /*---menu page styling---*/
 
@@ -377,8 +381,12 @@ li{
 @media screen and (max-width: 450px){
 h1{
 font-size: 2em;
-padding-bottom: 3em;
+padding-bottom: 6em;
 }
+p{
+  max-width: 90%;
+}
+
 }
 @media screen and (max-width:600px) {
 ul.menu-dropdown{
