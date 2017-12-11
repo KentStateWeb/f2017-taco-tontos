@@ -377,7 +377,12 @@ li{
 @media screen and (max-width: 450px){
 h1{
 font-size: 2em;
-padding-bottom: 1.5em;
+padding-bottom: 2em;
+}
+.flex{
+  text-align: center;
+  margin: 0 auto;
+
 }
 }
 @media screen and (max-width:600px) {
