@@ -159,12 +159,6 @@ h1{
   text-transform: uppercase;
   margin-top: -5.5em;
 }
-.ham:hover{
-  border-bottom: 3px solid red;
-}
-li:hover{
-  color: rgb(250,196,90);
-}
 /*---header styling ends---*/
 /*---main styling begins---*/
 main{
@@ -360,6 +354,10 @@ li{
   color: black;
   padding: 0.5em;
 }
+li.ham:hover{
+  background-color:rgba(250,196,90,0.6);
+}
+
 .stay{
   text-align: center;
   margin: 0 auto;
@@ -381,7 +379,7 @@ li{
 @media screen and (max-width: 450px){
 h1{
 font-size: 2.5em;
-padding-bottom: 4.7em;
+padding-bottom: 3em;
 }
 p{
   max-width: 90%;
