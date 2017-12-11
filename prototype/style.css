@@ -350,7 +350,7 @@ li{
   list-style-type: none;
   font-family: 'Helvetica', sans-serif;
   font-weight: 200;
-  font-size: 0.5em;
+  font-size: 0.6em;
   margin: 0 auto;
   text-align: center;
   color: black;
@@ -374,6 +374,11 @@ li{
 
 /*---footer styling ends---*/
 /*--- media queries ---*/
+@media screen and (max-width: 450px){
+.containers{
+  padding-top: 3em;
+}
+}
 @media screen and (max-width:600px) {
 ul.menu-dropdown{
     width: 50%;
@@ -437,7 +442,7 @@ p{
   }
 
 li.ham{
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
 li{
@@ -456,7 +461,6 @@ li{
   }
 }
 @media screen and (min-width: 750px){
-
   .flex{
     display: flex;
     margin-left: 10.5em;
