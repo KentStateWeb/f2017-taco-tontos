@@ -375,8 +375,8 @@ li{
 /*---footer styling ends---*/
 /*--- media queries ---*/
 @media screen and (max-width: 450px){
-.containers{
-  margin-top: 7em;
+h1{
+  padding: 10em;
 }
 }
 @media screen and (max-width:600px) {
