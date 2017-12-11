@@ -380,8 +380,8 @@ li{
 /*--- media queries ---*/
 @media screen and (max-width: 450px){
 h1{
-font-size: 2em;
-padding-bottom: 6em;
+font-size: 2.5em;
+padding-bottom: 4.7em;
 }
 p{
   max-width: 90%;
