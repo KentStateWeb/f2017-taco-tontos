@@ -165,6 +165,10 @@ main{
   margin-bottom: -2em;
   padding-bottom: 0em;
 }
+.selected{
+  font-weight: bold;
+  color: rgb(250,196,90);
+}
 /*---main styling ends---*/
 /*---menu styling---*/
 /*---menu styling ends---*/
@@ -283,6 +287,9 @@ img{
   margin: 0 auto;
   text-align: center;
 }
+a.button:hover{
+  background-color: rgba(107,142,22, 0.8);
+}
 .containerbot{
   margin-top: 0 auto;
   position: relative;
@@ -383,6 +390,9 @@ padding-bottom: 3em;
 }
 p{
   max-width: 90%;
+}
+.centeredbot{
+  margin-top: -0.7em;
 }
 
 }
@@ -587,6 +597,10 @@ li{
   }
 
 @media screen and (min-width:900px) {
+.logo{
+  width: 100px;
+  margin-left: 4em;
+}
 ul.menu-dropdown{
   padding-right: 2em;
 }
@@ -681,6 +695,10 @@ ul.menu-dropdown{
 }
 }
 @media screen and (min-width:1000px) {
+.logo{
+  width: 110px;
+  margin-left: 5em;
+}
 ul.menu-dropdown{
   padding-right: 3em;
 }
